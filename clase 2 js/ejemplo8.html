@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+    </ul>
+
+    <script>
+        //SELECCIONO TODOS LOS ELEMENTOS CON CLASE ITEM
+        var items = document.getElementsByClassName("item");
+        // inicio el indice en 0, el tope es "menor a la cantidad (length) de items. Ahora son 5 pero si pongo 20, el for no cambiala logica
+        for(var i=0; i<items.length; i++){
+            // todos los inidces i, color azul con un padding left de 10 px por el inidce
+            // 0=item 1 - 1=item 2 - 2=item 3, etc
+            items [i].style = "color:blue; padding-left: " + (10*i) +"px"
+        }
+    </script>
+    
+</body>
+</html>
