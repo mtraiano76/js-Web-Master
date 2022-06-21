@@ -11,7 +11,7 @@
         <p>parrafo 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore libero possimus debitis? Odit deserunt, qui quia eos earum aut ipsam ducimus quibusdam, officia eius porro architecto sapiente consequuntur pariatur exercitationem.</p>
         <p>parrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate similique voluptatem voluptas quia natus iusto voluptatibus exercitationem, commodi odit necessitatibus ad, et cupiditate quo hic corporis animi a ipsa quaerat!</p>
         <p>parrafo 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel recusandae debitis eligendi neque illo ab aspernatur, deleniti, perferendis odit nesciunt, aliquid commodi laborum amet. Officia ut voluptatum praesentium magnam in!</p>
-        <div id="caja1" style="border:solid 2px red">
+        <div id="caja2" style="border:solid 2px red">
             <p>parrafo 4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aliquam nemo dolor. A veritatis quaerat eveniet atque est error, labore asperiores saepe. Laboriosam, assumenda inventore. Veniam voluptas sunt totam accusantium.</p>
             <p>parrafo 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, odit qui expedita harum laudantium quia veritatis at temporibus eaque nobis adipisci facere asperiores, doloribus quas rem animi voluptates libero rerum.</p>
         </div>
@@ -20,7 +20,7 @@
     <p>parrafo 7 estoy afuera</p>
     <button onclick="todosLosParrafos()">Todos los parrafos</button>
     <button onclick="cajaAzul()">Todos los parrafos de la caja 1</button>
-    <button>Todos los parrafos de la caja 2</button>
+    <button onclick="cajaRojo()">Todos los parrafos de la caja 2</button>
 
     <script>
         function todosLosParrafos(){
@@ -41,6 +41,19 @@
             console.log(caja1parrafo);
 
             var num = caja1parrafo.length;
+
+                alert("Hay " + num + " <p> en el documento");
+            
+
+        }
+        function cajaRojo(){
+            var caja2 = document.getElementById("caja2");
+            console.log(caja2);
+            
+            var caja2parrafo = caja2.getElementsByTagName("p");
+            console.log(caja2parrafo);
+
+            var num = caja2parrafo.length;
 
                 alert("Hay " + num + " <p> en el documento");
             
