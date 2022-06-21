@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="caja1" style="border:solid 2px blue">
+        <p>parrafo 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore libero possimus debitis? Odit deserunt, qui quia eos earum aut ipsam ducimus quibusdam, officia eius porro architecto sapiente consequuntur pariatur exercitationem.</p>
+        <p>parrafo 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate similique voluptatem voluptas quia natus iusto voluptatibus exercitationem, commodi odit necessitatibus ad, et cupiditate quo hic corporis animi a ipsa quaerat!</p>
+        <p>parrafo 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel recusandae debitis eligendi neque illo ab aspernatur, deleniti, perferendis odit nesciunt, aliquid commodi laborum amet. Officia ut voluptatum praesentium magnam in!</p>
+        <div id="caja1" style="border:solid 2px red">
+            <p>parrafo 4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque aliquam nemo dolor. A veritatis quaerat eveniet atque est error, labore asperiores saepe. Laboriosam, assumenda inventore. Veniam voluptas sunt totam accusantium.</p>
+            <p>parrafo 5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, odit qui expedita harum laudantium quia veritatis at temporibus eaque nobis adipisci facere asperiores, doloribus quas rem animi voluptates libero rerum.</p>
+        </div>
+    </div>
+    <p>parrafo 6 estoy afuera</p>
+    <p>parrafo 7 estoy afuera</p>
+    <button onclick="todosLosParrafos()">Todos los parrafos</button>
+    <button onclick="cajaAzul()">Todos los parrafos de la caja 1</button>
+    <button>Todos los parrafos de la caja 2</button>
+
+    <script>
+        function todosLosParrafos(){
+        var allParrafos=document.getElementsByTagName("p")
+        //console.log (allParrafos);
+
+        var num=allParrafos.length;
+        console.log(num);
+
+        alert("Hay " + num + "<p> en el documento");
+
+        }
+        function cajaAzul(){
+            var caja1 = document.getElementById("caja1");
+            console.log(caja1);
+            
+            var caja1parrafo = caja1.getElementsByTagName("p");
+            console.log(caja1parrafo);
+
+            var num = caja1parrafo.length;
+
+                alert("Hay " + num + " <p> en el documento");
+            
+
+        }
+    
+    </script>
+
+</body>
+
+</html>
