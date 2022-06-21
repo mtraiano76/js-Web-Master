@@ -10,15 +10,21 @@
     <h1>CSS</h1>
     <P id="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae necessitatibus, ipsa corrupti incidunt mollitia odio corporis? Soluta laborum sit est in facere adipisci dolores expedita reiciendis. Exercitationem nam et dolores?</P>
     <button id="menos">10px</button>
+    <button id="normal">16px</button>
     <button id="mas">30px</button>
 
     <script>
         var parrafo = document.getElementById("parrafo");
         var menos = document.getElementById("menos");
         var mas = document.getElementById("mas");
+        var normal = document.getElementById("normal");
 
         menos.addEventListener("click", function(){
             parrafo.style.fontSize = "10px";
+        })
+
+        normal.addEventListener("click", function(){
+            parrafo.style.fontSize = "16px";
         })
 
         mas.addEventListener("click", function(){
