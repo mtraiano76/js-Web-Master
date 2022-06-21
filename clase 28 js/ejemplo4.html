@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Formulario</h1>
+    <form action="" id="formulario" class="formulario">
+        <p>
+            <label for="">Nombre</label>
+            <input type="text" name="nombre">
+        </p>
+        <p>
+            <label for="">Mensaje</label>
+            <textarea name="mensaje" id=""></textarea>
+        </p>
+        <p><button>Enviar</button></p>
+    </form>
+    <script>
+        var formulario = document.getElementById("formulario");
+        formulario.addEventListener("submit", function(e){
+            e.preventDefault();//freno
+            if(e.target.nombre.value == ""){
+                alert("El campo nombre se tiene que completar"); return; // si no coloco return, me muestra todos los alerts
+            }
+            if(e.target.mensaje.value == ""){
+                alert("El campo mensaje se tiene que completar"); return;
+            }
+
+            alert("Gracias " + e.target.nombre.value + " por enviarnos el siguiente mensaje " + e.target.mensaje.value)
+
+        })
+    </script>
     
 </body>
 </html>
