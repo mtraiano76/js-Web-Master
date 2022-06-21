@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>CSS</h1>
+    <P id="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae necessitatibus, ipsa corrupti incidunt mollitia odio corporis? Soluta laborum sit est in facere adipisci dolores expedita reiciendis. Exercitationem nam et dolores?</P>
+    <button id="menos">10px</button>
+    <button id="mas">30px</button>
+
+    <script>
+        var parrafo = document.getElementById("parrafo");
+        var menos = document.getElementById("menos");
+        var mas = document.getElementById("mas");
+
+        menos.addEventListener("click", function(){
+            parrafo.style.fontSize = "10px";
+        })
+
+        mas.addEventListener("click", function(){
+            parrafo.style.fontSize = "30px";
+        })
+
+
+
+    </script>
     
 </body>
 </html>
